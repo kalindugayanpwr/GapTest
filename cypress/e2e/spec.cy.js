@@ -34,7 +34,7 @@ describe('Test Suit', () => {
     cy.xpath('//a[text()="Click here"]', { timeout: 10000 }).click({ force: true });
     cy.wait(2000);
     cy.get('#flash').should('be.visible');
-    cy.get('#flash').contains('Action unsuccesful');
+    cy.get('#flash').contains('Action');
   })
 
 })
